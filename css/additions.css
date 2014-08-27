@@ -1,0 +1,87 @@
+/* jQuery UI override */
+	.ui-widget-content {
+		border: 1px solid #dedede;
+		border-top: none;
+		margin-top: -1px;
+		-webkit-border-radius: 0px 0px 3px 3px;
+		-moz-border-radius: 0px 0px 3px 3px;
+		border-radius: 0px 0px 3px 3px;
+		overflow: hidden;
+		width: 538px;
+	}
+
+	.ui-widget-content li.ui-menu-item,
+	.ui-widget-content li.ui-state-focus {
+		height: 23px;
+		list-style-image: none;
+		padding: 4px 10px;
+		font-size: 11px;
+		color: #4a4a4a;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.ui-widget-content li.ui-state-focus {
+		background-color: #ebebeb;
+		border: none;
+		background-image: none;
+		margin: 0;
+	}
+
+/* Media Queries */
+	@media screen and (max-width:660px) {
+		#container {
+			width: 100%;
+			padding: 30px;
+			margin: 0;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#songs .name {
+			width: 40%;
+		}
+
+		#songs .popularity {
+			width: 20%;
+		}
+
+		#songs .duration {
+			width: 20%;
+		}
+
+		#songs .delete {
+			width: 20%;
+		}
+
+		#tags .form input {
+			width: 80%;
+		}
+
+		#tags .form button {
+			width: 20%;
+		}
+	}
+
+	@media screen and (max-width: 380px) {
+		* {
+			font-size: 12px;
+		}
+
+		.notice {
+			font-size: 10px;
+		}
+
+		#playlist_name input {
+			font-size: 20px;
+			line-height: 26px;
+			padding: 6px 10px;
+			height: 40px;
+		}
+
+		#playlist_name:before,
+		#playlist_name:after {
+			top: 30px;
+		}
+	}

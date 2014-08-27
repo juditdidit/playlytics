@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Playlytics</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/additions.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400,300">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="js/spotify-web-api.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="content">
+			<h1>Playlytics</h1>
+			<div id="saved" class="notice">Playlist saved</div>
+			<div id="playlist_name">
+				<input type="text" name="playlist_name" value="Name Your Awesome Playlist">
+			</div>
+
+			<div id="search">
+				<h2>Search for some songs to create your playlist!</h2>
+				<input type="text" name="search" id="search_field">
+			</div>
+			
+			<div id="songs">
+				<div class="stats">
+					<div class="name">Song Names</div>
+					<div class="popularity center"><i class="fa fa-heart"></i></div>
+					<div class="duration center"><i class="fa fa-clock-o"></i></div>
+					<div class="delete center"><i class="fa fa-times"></i></div>
+				</div>
+				<div id="no_songs_added" class="notice">No songs added yet!</div>
+				<ul></ul> <!-- appending song list -->
+				<div class="playlist_stats">
+					<div class="name">Playlist Stats</div>
+					<div class="popularity center"></div>
+					<div class="duration center"></div>
+					<div class="delete center"></div>
+				</div>
+			</div>
+
+			<div id="tags">
+				<h2>Tag your playlist <span class="notice">(separate by commas)</span></h2>
+				<div class="form">
+					<input type="text" name="tag">
+					<button id="submit">Add</button>
+				</div>
+				<div class="tags">
+					<ul></ul> <!-- appending tags list -->
+					<p id="delete_tag_notice" class="notice">Click a tag to delete it</p>
+				</div>
+			</div>
+		</div>
+		<div id="byline">Designed and developed by <a href="http://juditdidit.com" target="_blank">Judit Lukacsovich</a></div>
+	</div>
+</body>
+</html>
