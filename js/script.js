@@ -116,8 +116,6 @@ function store() { // saving to local storage
 	saved_songs_str = JSON.stringify(saved_songs_arr);
 	localStorage.setItem('saved_songs', saved_songs_str);
 	
-	console.log('I saved');
-
 	$('#saved').addClass('show');
 	setTimeout(function(){
 		$('#saved').removeClass('show');
@@ -164,8 +162,6 @@ function loadup() { // grabbing from local storage
 	are_tags();
 	calc_coolness();
 	calc_total_duration();
-
-	console.log('I loaded everything');
 };
 
 function calc_duration(duration) {
